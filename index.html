@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gensites Display</title>
+
+    <!-- Bootstrap -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>gensites<small> JavaScript library containing metadata about genealogy websites.</small></h1>
+      <div id="list"></div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="gensites.js"></script>
+    <script>
+      $(function(){
+        var $list = $('#list');
+        for(var i = 0; i < gensites.sites.length; i++){
+          var site = gensites.sites[i];
+          var $site = $('<div>').addClass('site');
+          $('<h3>').append(
+            $('<a>').text(site.name)
+            .attr('href', site.url).attr('target', '_blank')
+          ).appendTo($site);
+          $('<p>').text(site.description.en).appendTo($site);
+          $site.appendTo($list);
+        }
+      });
+    </script>
+  </body>
+</html>
