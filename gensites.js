@@ -24,67 +24,89 @@
       id: 'americanancestors',
       name: 'AmericanAncestors.org',
       url: 'http://www.americanancestors.org',
-      description: ''
+      descriptions: { 
+        en: 'AmericanAncestors.org is the New England Historic Genealogical Society&#39;s portal to America, providing a wealth of resources for family history research.  We provide expertise and research in nearly all aspects of genealogy, from seventeenth-century colonial New England through twentieth-first-century immigration research.'
+      }
     },
     {
       id: 'ancestry',
       name: 'Ancestry.com',
       url: 'http://ancestry.com',
-      description: 'Discover your family history and start your family tree. Try free and access billions of genealogy records including Census, SSDI & Military records.'
+      descriptions: { 
+        en: 'Discover your family history and start your family tree. Try free and access billions of genealogy records including Census, SSDI & Military records.'
+      }
     },
     {
       id: 'archives',
       name: 'Archives',
       url: 'http://www.archives.com',
-      description: ''
+      descriptions: { 
+        en: 'Trace your genealogy and family tree to learn more about your family\'s history.'
+      }
     },
     {
       id: 'billiongraves',
       name: 'BillionGraves',
       url: 'http://billiongraves.com',
-      description: ''
+      descriptions: { 
+        en: 'Collect photos of the headstones in your local cemetery with our iPhone/Android camera app. Then upload the mapped-out photos here.'
+      }
     },
     {
       id: 'chroniclingamerica',
       name: 'Chronicling America',
       url: 'http://chroniclingamerica.loc.gov',
-      description: '',
+      descriptions: { 
+        en: 'Search America\'s historic newspaper pages from 1836-1922 or use the U.S. Newspaper Directory to find information about American newspapers published between 1690-present.'
+      }
     },
     {
       id: 'familysearch',
       name: 'FamilySearch',
       url: 'https://familysearch.org',
-      description: ''
+      descriptions: { 
+        en: 'Discover your family history. Explore the world’s largest collection of free family trees, genealogy records and resources.'
+      }
     },
     {
       id: 'findagrave',
       name: 'Find A Grave',
       url: 'http://www.findagrave.com',
-      description: ''
+      descriptions: { 
+        en: "Find A Grave is a free resource for finding the final resting places of famous folks, friends and family members. With millions of names, it's an invaluable tool for genealogist and history buffs. Find A Grave memorials are rich with content, including dates, photos and bios. You can even leave 'virtual flowers' on the memorials you visit to complete the online cemetery experience. Find A Grave also contains listings for thousands of celebrity graves, making it the premier online destination for tombstone tourists."
+      }
     },
     {
       id: 'findmypast.co.uk',
       name: 'findmypast.co.uk',
       url: 'http://www.findmypast.co.uk',
-      description: ''
+      descriptions: { 
+        en: 'Trace your ancestry and build a family tree by researching extensive birth records, census data, obituaries and more with findmypast.'
+      }
     },
     {
       id: 'findmypast.com',
       name: 'findmypast.com',
       url: 'http://www.findmypast.com',
-      description: ''
+      descriptions: { 
+        en: 'Trace your ancestry and build a family tree by researching extensive birth records, census data, obituaries and more with findmypast.'
+      }
     },
     {
       id: 'fold3',
       name: 'fold3',
       url: 'http://www.fold3.com',
-      description: ''
+      descriptions: { 
+        en: 'Fold3 is the web\'s premier collection of original US military records, including many from the US National Archives.'
+      }
     },
     {
       id: 'genealogieonline',
       name: 'Genealogie Online',
       url: 'http://www.genealogieonline.nl',
-      description: ''
+      descriptions: { 
+        en: 'Publish your genealogical information and images on the Internet, it\'s easy! Over 25 million ancestors published and searchable.'
+      }
     }
   ];
   
