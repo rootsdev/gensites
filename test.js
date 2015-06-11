@@ -15,11 +15,25 @@ describe('gensites', function(){
     expect(gensites.version).to.exist;
   });
   
-  it('expose sites', function(){
+  it('sites()', function(){
     expect(gensites.sites).to.exist;
-    for(var i = 0; i < gensites.sites.length; i++){
-      validateSiteSchema(gensites.sites[i]);
+    var sites = gensites.sites();
+    for(var i = 0; i < sites.length; i++){
+      validateSiteSchema(sites[i]);
     }
+  });
+  
+  it('sites() returns a copy', function(){
+    // Use splice to modify the returned array in place.
+    // Delete all entries in the array.
+    // Make sure we haven't modified the original sites list.
+    var emptyList = gensites.sites().splice(0, Number.MAX_SAFE_INTEGER);
+    expect(emptyList).to.have.length(0);
+    expect(gensites.sites()).to.have.length.above(0);
+  });
+  
+  it('site()', function(){
+    validateSiteSchema(gensites.site('ancestry'));
   });
   
 });

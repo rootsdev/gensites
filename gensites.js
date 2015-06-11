@@ -19,7 +19,7 @@
   
   exports.version = '0.1.0';
   
-  exports.sites = [
+  var sitesList = [
     {
       id: 'americanancestors',
       name: 'AmericanAncestors.org',
@@ -232,5 +232,27 @@
     }
     */
   ];
+  
+  // Convert sites list into a map for easy access
+  var sitesMap = {};
+  for(var i = 0; i < sitesList.length; i++){
+    var site = sitesList[i];
+    sitesMap[site.id] = site;
+  }
+  
+  /**
+   * Get a specific site.
+   */
+  exports.site = function(siteId){
+    return sitesMap[siteId];
+  };
+  
+  /**
+   * Get the full list of websites.
+   * Return a shallow copy so that the user can mess with it as they like.
+   */
+  exports.sites = function(){
+    return sitesList.slice();
+  };
   
 }));

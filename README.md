@@ -6,7 +6,25 @@ websites supported by [gensearch](https://github.com/rootsdev/gensearch)
 and [genscrape](https://github.com/rootsdev/genscrape) but I'm sure we can come 
 up with more uses for it.
 
-Sites are exposed as `gensites.sites`. The schema is:
+## Methods
+
+### site(siteId)
+
+Get a specific site.
+
+```js
+gensites.site('werelate');
+```
+
+### sites()
+
+Get a list of all available sites.
+
+```js
+gensites.sites();
+```
+
+## Site Schema
 
 ```js
 {
@@ -21,3 +39,4 @@ Sites are exposed as `gensites.sites`. The schema is:
 
 The current descriptions were pulled from their respective websites, either using
 the meta description if it existed or some other description shown on the home page.
+They could use a little work to be more useful.
