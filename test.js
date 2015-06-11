@@ -1,5 +1,8 @@
-var expect = require('chai').expect,
+var chai = require('chai'),
+    expect = require('chai').expect,
     gensites = require('./gensites');
+    
+chai.config.includeStack = true;
 
 describe('gensites', function(){
   
@@ -22,9 +25,10 @@ describe('gensites', function(){
 });
 
 function validateSiteSchema(site){
-  expect(site.id).to.exist;
-  expect(site.name).to.exist;
-  expect(site.url).to.exist;
-  expect(site.descriptions).to.exist;
-  expect(site.descriptions).to.have.any.keys('en');
+  var siteErrorDescription = 'Error processing site ' + site.id + ': ';
+  expect(site.id, siteErrorDescription + 'site.id').to.exist;
+  expect(site.name, siteErrorDescription + 'site.name').to.exist;
+  expect(site.url, siteErrorDescription + 'site.url').to.exist;
+  expect(site.description, siteErrorDescription + 'site.description').to.exist;
+  expect(site.description, siteErrorDescription + 'site.description contains en').to.have.any.keys('en');
 }
