@@ -181,7 +181,7 @@
       }
     },
     {
-      id: 'openarch',
+      id: 'openarchives',
       name: 'Open Archives',
       url: 'https://openarch.nl',
       description: {
