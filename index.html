@@ -23,8 +23,9 @@
     <script>
       $(function(){
         var $list = $('#list');
-        for(var i = 0; i < gensites.sites.length; i++){
-          var site = gensites.sites[i];
+        var sites = gensites.sites();
+        for(var i = 0; i < sites.length; i++){
+          var site = sites[i];
           var $site = $('<div>').addClass('site');
           $('<h3>').append(
             $('<a>').text(site.name)
