@@ -149,14 +149,6 @@
       }
     },
     {
-      id: 'mocavo',
-      name: 'Mocavo',
-      url: 'http://www.mocavo.com',
-      description: {
-        en: 'With billions of names, years & places, Mocavo is your source for free ancestry records. Upload your family tree and begin your family history search today.'
-      }
-    },
-    {
       id: 'myheritage',
       name: 'MyHeritage',
       url: 'http://www.myheritage.com',

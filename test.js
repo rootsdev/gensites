@@ -24,12 +24,11 @@ describe('gensites', function(){
   });
   
   it('sites() returns a copy', function(){
-    // Use splice to modify the returned array in place.
-    // Delete all entries in the array.
-    // Make sure we haven't modified the original sites list.
-    var emptyList = gensites.sites().splice(0, Number.MAX_SAFE_INTEGER);
-    expect(emptyList).to.have.length(0);
-    expect(gensites.sites()).to.have.length.above(0);
+    // Modify the array returned by sites() then check if that value is returned
+    // by another call to sites()
+    var firstList = gensites.sites();
+    firstList[0] = 'foobar';
+    expect(gensites.sites()[0]).to.not.equal('foobar');
   });
   
   it('site()', function(){
